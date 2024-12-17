@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\alarmview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\services\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\services\\inavigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\alarmregisterview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmregisterview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\services\\navitype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\services\\navitype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\views\\navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\converters\\windowstateiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\converters\\windowstateiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\viewmodels\\alarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\alarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|d:\\source\\alarm\\ubiocclass_3_navigation\\ubiocclass\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 194,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NavigationBar.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\NavigationBar.xaml.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\NavigationBar.xaml.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\NavigationBar.xaml.cs",
+              "RelativeToolTip": "UBIOCClass\\Views\\NavigationBar.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwBIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T02:07:49.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WindowStateIconConverter.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Converters\\WindowStateIconConverter.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Converters\\WindowStateIconConverter.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Converters\\WindowStateIconConverter.cs",
+              "RelativeToolTip": "UBIOCClass\\Converters\\WindowStateIconConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T08:03:21.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavigationBar.xaml",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\NavigationBar.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\NavigationBar.xaml",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\NavigationBar.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\NavigationBar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T07:49:59.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlarmHistoryView.xaml",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T07:12:48.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlarmRegisterView.xaml",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmRegisterView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmRegisterView.xaml",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmRegisterView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmRegisterView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T07:12:47.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "UBIOCClass\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswFUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:57:22.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AlarmViewModel.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\ViewModels\\AlarmViewModel.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\AlarmViewModel.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\ViewModels\\AlarmViewModel.cs",
+              "RelativeToolTip": "UBIOCClass\\ViewModels\\AlarmViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:52:31.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\App.xaml.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\App.xaml.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\App.xaml.cs",
+              "RelativeToolTip": "UBIOCClass\\App.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwCgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:51:44.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NaviType.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\NaviType.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Services\\NaviType.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\NaviType.cs",
+              "RelativeToolTip": "UBIOCClass\\Services\\NaviType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:50:28.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INavigationService.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\INavigationService.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Services\\INavigationService.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\INavigationService.cs",
+              "RelativeToolTip": "UBIOCClass\\Services\\INavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:48:52.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\NavigationService.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Services\\NavigationService.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Services\\NavigationService.cs",
+              "RelativeToolTip": "UBIOCClass\\Services\\NavigationService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T06:48:52.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\MainView.xaml",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\MainView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T04:47:07.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\MainView.xaml.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\MainView.xaml.cs",
+              "RelativeToolTip": "UBIOCClass\\Views\\MainView.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T04:43:45.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlarmView.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmView.xaml.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmView.xaml.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmView.xaml.cs",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmView.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T01:45:35.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlarmView.xaml",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmView.xaml",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Views\\AlarmView.xaml*",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmView.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-28T00:19:42.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Alarm.cs",
+              "DocumentMoniker": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Models\\Alarm.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Models\\Alarm.cs",
+              "ToolTip": "D:\\Source\\Alarm\\UBIOCClass_3_Navigation\\UBIOCClass\\Models\\Alarm.cs",
+              "RelativeToolTip": "UBIOCClass\\Models\\Alarm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T23:43:11.259Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

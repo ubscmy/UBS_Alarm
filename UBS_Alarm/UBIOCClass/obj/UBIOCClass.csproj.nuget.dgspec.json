@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj",
+        "projectName": "UBIOCClass",
+        "projectPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj",
+        "packagesPath": "C:\\Users\\sbico\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sbico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "FontAwesome6.Svg": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

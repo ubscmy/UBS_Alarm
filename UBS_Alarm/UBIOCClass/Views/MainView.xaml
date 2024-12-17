@@ -1,0 +1,36 @@
+﻿<Window x:Class="UBIOCClass.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UBIOCClass.Views"
+        xmlns:viewmodels="clr-namespace:UBIOCClass.ViewModels"
+        mc:Ignorable="d"
+        Title="MainView" Height="1080" Width="1920" WindowState="Maximized">
+
+    <Grid>
+        <Grid Background="#404348">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.05*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="0.05*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <DockPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <!--<local:NavigationBar OrientationMode="{Binding NavBarOrientation}" DockPanel.Dock="{Binding NavBarDock}"/>-->
+                <Grid>
+                    <ContentControl Content="{Binding CurrentViewModel}"/>
+                    <Grid.Resources>
+                        <DataTemplate DataType="{x:Type viewmodels:AlarmViewModel}">
+                            <local:AlarmView/>
+                        </DataTemplate>
+                    </Grid.Resources>
+                </Grid>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>

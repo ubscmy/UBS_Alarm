@@ -1,0 +1,179 @@
+﻿<UserControl x:Class="UBIOCClass.Views.AlarmHistoryView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UBIOCClass.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding HisotryModel.AlarmData}" SelectionUnit="FullRow" HeadersVisibility="Column" SelectedItem="{Binding HisotryModel.SelectedAlarmData}">
+                <DataGrid.Columns>
+                <DataGridTextColumn  Header="번호" Binding="{Binding AlarmID}" Width="1*" />
+                <DataGridTextColumn  Header="코드" Binding="{Binding AlarmCode}" Width="1.5*" />
+                <DataGridTextColumn  Header="종류" Binding="{Binding AlarmType}" Width="2*" />
+                <DataGridTextColumn  Header="알람 명" Binding="{Binding AlarmName}" Width="4*" />
+                <DataGridTextColumn  Header="발생 원인" Binding="{Binding AlarmDescription}" Width="4*" />
+                    <DataGridTextColumn  Header="발생 일자" Binding="{Binding AlarmOcucurrenceTime}" Width="3*" />
+                <DataGridTextColumn  Header="조치 방안" Binding="{Binding AlarmSolveDescription}" Width="5*" />
+                    <!-- 등급 컬럼 -->
+                    <DataGridTemplateColumn Header="등급" Width="1*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding AlarmLevel}" Background="{Binding AlarmLevelColor}" Foreground="{Binding AlarmLevelForeColor}" Height="Auto"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <!-- 검색 필터 영역 -->
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+
+
+            <!-- 검색 타이틀 -->
+            <TextBlock Grid.Row="0" Text="알람 검색" FontWeight="Bold" FontSize="16" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+
+            <!-- 코드 -->
+            <Grid Grid.Row="1" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="코드" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="Auto" />
+                <TextBox Text="{Binding HisotryModel.AlarmCode}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+            <!-- 알람 명 -->
+            <Grid Grid.Row="2" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.15*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="알람 명" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBox Text="{Binding HisotryModel.AlarmName}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+            <!-- 발생 원인 -->
+            <Grid Grid.Row="3" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="발생 원인" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBox Text="{Binding HisotryModel.AlarmDescription}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+            <!-- 조치 방안 -->
+            <Grid Grid.Row="4" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="조치 방안" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBox Text="{Binding HisotryModel.AlarmSolveDescription}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+            <!-- 종류 -->
+            <Grid Grid.Row="5" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="종류" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <ComboBox Grid.Column="2" Width="Auto" Text="{Binding HisotryModel.AlarmLevel}">
+                    <ComboBoxItem Content="HEAVY" />
+                    <ComboBoxItem Content="LIGHT" />
+                </ComboBox>
+            </Grid>
+
+            <!-- 시작일 -->
+            <Grid Grid.Row="6" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="시작 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <DatePicker Text="{Binding HisotryModel.AlarmStartDateTime}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+            <!-- 종료일 -->
+            <Grid Grid.Row="7" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.2*" />
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="종료 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <DatePicker Text="{Binding HisotryModel.AlarmEndDateTime}" Grid.Column="2" Width="Auto" />
+            </Grid>
+
+
+            <Grid Grid.Row="9" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 검색 버튼 -->
+                <Button Grid.Column="1" Height="Auto" Content="테이블+" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.CreateTable}" Cursor="Hand" />
+                <Button Grid.Column="2" Height="Auto" Content="새로고침" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.DB_Select}"/>
+                <Button Grid.Column="3" Height="Auto" Content="검색" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.DB_SearchSelect}"/>
+            </Grid>
+
+            <!-- 조치 방안 -->
+            <Grid Grid.Row="10" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*" />
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.45*" />
+                    <ColumnDefinition Width="0.1*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="코드" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBox Text="{Binding HisotryModel.AlarmCode}" Grid.Column="2" Width="Auto" />
+                <Button Content="추가" Grid.Column="4" Width="Auto" HorizontalAlignment="Left" Command="{Binding ICommandModel.DB_Insert}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

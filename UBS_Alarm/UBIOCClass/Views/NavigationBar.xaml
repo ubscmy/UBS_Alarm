@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="UBIOCClass.Views.NavigationBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UBIOCClass.Views"
+             xmlns:converters="clr-namespace:UBIOCClass.Converters"
+             xmlns:service="clr-namespace:UBIOCClass.Services"
+             xmlns:vm="clr-namespace:UBIOCClass.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="100">
+    <UserControl.Resources>
+        <!--<converters:EqualValueToParameterConverter x:Key="EqualValueToParameterConverter" />-->
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel x:Name="mainpanel" Grid.Row="1" Grid.Column="0" Orientation="{Binding ElementName=root, Path=OrientationMode}" HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                RenderOptions.EdgeMode="Aliased">
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"/>
+            <!--CommandParameter="{x:Static service:eNaviType.AlarmView}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:LIMSMainViewModel}}" 
+                IsEnabled="{Binding IsEnable[0]}">-->
+                <TextBlock Text="Main" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            
+            <!--<RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.Main}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:LIMSMainViewModel}}" 
+                IsEnabled="{Binding IsEnable[0]}">
+                <TextBlock Text="Main" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.RequestInfo}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:RequestInfoViewModel}}" 
+                IsEnabled="{Binding IsEnable[1]}">
+                <TextBlock Text="의뢰 정보" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.AnalyzationResult}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:AnalyzationResultViewModel}}" 
+                IsEnabled="{Binding IsEnable[2]}">
+                <TextBlock Text="분석 결과" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.AnalyzationConfig}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:AnalyzationConfigViewModel}}"
+                IsEnabled="{Binding IsEnable[3]}">
+                <TextBlock Text="분석 설정" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            --><!--Job View 삭제-->
+            <!--<RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.JOBInfo}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:JOBInfoViewModel}}"
+                IsEnabled="{Binding IsEnable[4]}">
+                <TextBlock Text="JOB" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </RadioButton>--><!--
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.MOMA}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:MOMAMainViewModel}}"
+                IsEnabled="{Binding IsEnable[5]}">
+                <TextBlock Text="MOMA" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            --><!--사용자용 화면이 아님-->
+            <!--<RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.Dispatcher}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:DispatcherInfoViewModel}}"
+                IsEnabled="{Binding IsEnable[6]}">
+                <TextBlock Text="Dispatcher" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>--><!--
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.Config}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:ConfigurationViewModel}}"
+                IsEnabled="{Binding IsEnable[7]}">
+                <TextBlock Text="Config" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.Alarm}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:AlarmViewModel}}"
+                IsEnabled="{Binding IsEnable[8]}">
+                <TextBlock Text="Alarm" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.History}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:HistoryViewModel}}"
+                IsEnabled="{Binding IsEnable[9]}">
+                <TextBlock Text="History" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>
+
+            --><!--<RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static service:eNaviType.Log}"
+                IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:LIMSMainViewModel}}"
+                IsEnabled="{Binding IsEnable[10]}">
+                <TextBlock Text="Log" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </RadioButton>-->
+
+            <!--Log 버튼 삭제-->
+            <!--<Button Style="{DynamicResource NavButtonStyle}"
+                    Command="{Binding CMD_LogView}"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Content="Log"/>--><!--
+            <RadioButton Style="{DynamicResource NavRadiobuttonStyle}"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static service:eNaviType.ManualRequestOrder}"
+                         IsChecked="{Binding CurrentViewModel, Mode=OneWay, Converter={StaticResource EqualValueToParameterConverter}, ConverterParameter={x:Type vm:ManualRequestOrderViewModel}}"
+                         IsEnabled="{Binding IsEnable[11]}">
+                <TextBlock Text="수동 의뢰" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </RadioButton>-->
+        </StackPanel>
+    </Grid>
+</UserControl>
