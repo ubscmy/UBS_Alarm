@@ -614,11 +614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj",
+      "projectUniqueName": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
       "projectName": "UBIOCClass",
-      "projectPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\UBIOCClass.csproj",
+      "projectPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
       "packagesPath": "C:\\Users\\sbico\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\Alarm_초안_Level별 Color 추가\\UBIOCClass\\obj\\",
+      "outputPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sbico\\AppData\\Roaming\\NuGet\\NuGet.Config",

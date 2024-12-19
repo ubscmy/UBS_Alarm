@@ -1,24 +1,41 @@
 ﻿using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using UBIOCClass.Models;
 
 namespace UBIOCClass.ViewModels
 {
     public class SQLConn
     {
-        private const string connectionString = "Data Source=Alarm.db;";
+        private const string dbPath = "Alarm.db";
+        private const string AlarmListFile = "D:\\DATA\\TestAlarmCode.xlsx";
+        private const string connectionString = $"Data Source={dbPath};";
 
         private SqliteConnection OpenConnection()
         {
             var connection = new SqliteConnection(connectionString);
             connection.Open();
+
+            var dbFile = new FileInfo(dbPath); // 데이터베이스 파일 경로
+            if (!dbFile.Exists || dbFile.Length == 0)
+            {
+                _CreateTable();
+
+                if (File.Exists(AlarmListFile))
+                {
+                    Query query = new Query();
+                    query.ExcelToDBInsert(AlarmListFile);
+                }
+
+            }
             return connection;
         }
-
-
+       
         // 테이블 생성 (단일 실행)
         public bool _CreateTable()
         {
@@ -59,6 +76,21 @@ namespace UBIOCClass.ViewModels
                     command.CommandText = createHistoryTable;
                     command.ExecuteNonQuery();
                 }
+
+                var createRegisterIndex = @"CREATE INDEX IF NOT EXISTS idx_register_alarmcode ON Register(AlarmCode);";
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = createRegisterIndex;
+                    command.ExecuteNonQuery();
+                }
+
+                var createHistoryIndex = @"CREATE INDEX IF NOT EXISTS idx_history_alarmcode ON History(AlarmCode);
+";                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = createHistoryIndex;
+                    command.ExecuteNonQuery();
+                }
+
                 connection.Close();
             }
 
@@ -72,9 +104,11 @@ namespace UBIOCClass.ViewModels
             {
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                INSERT INTO Register (AlarmCode, AlarmType, AlarmName, AlarmDescription, AlarmSolveDescription, AlarmLevel,AlarmNote)
-                VALUES (@AlarmCode, @AlarmType, @AlarmName, @AlarmDescription, @AlarmSolveDescription, @AlarmLevel, @AlarmNote);
-            ";
+    INSERT INTO Register 
+    (AlarmCode, AlarmType, AlarmName, AlarmDescription, AlarmSolveDescription, AlarmLevel, AlarmNote)
+    VALUES (@AlarmCode, @AlarmType, @AlarmName, @AlarmDescription, @AlarmSolveDescription, @AlarmLevel, @AlarmNote);
+    ";
+
 
                 // 파라미터 설정
                 command.Parameters.AddWithValue("@AlarmCode", Code);
@@ -158,7 +192,7 @@ namespace UBIOCClass.ViewModels
             using (var connection = OpenConnection())
             {
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM Register";
+                command.CommandText = "SELECT * FROM Register ORDER BY AlarmCode ASC";
 
                 using (var reader = command.ExecuteReader())
                 {
@@ -191,7 +225,7 @@ namespace UBIOCClass.ViewModels
             using (var connection = OpenConnection())
             {
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT COUNT(*) FROM Register WHERE AlarmCode = @AlarmCode";
+                command.CommandText = "SELECT COUNT(*) FROM Register WHERE AlarmCode = @AlarmCode ORDER BY AlarmCode ASC";
                 command.Parameters.AddWithValue("@AlarmCode", AlarmCode);
                 using (var reader = command.ExecuteReader())
                 {
@@ -214,7 +248,7 @@ namespace UBIOCClass.ViewModels
             using (var connection = OpenConnection())
             {
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, r.AlarmNote, h.DateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode;";
+                command.CommandText = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, r.AlarmNote, h.DateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode  ORDER BY h.DateTime DESC;";
 
 
                 using (var reader = command.ExecuteReader())
@@ -250,7 +284,8 @@ namespace UBIOCClass.ViewModels
                 using (var command = connection.CreateCommand())
                 {
                     // 기본 쿼리, 한 줄로 작성
-                    string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1";
+                    string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, r.AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1";
+                    //string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1 ORDER BY h.DateTime DESC;";
 
                     // 동적으로 조건 추가
                     if (!string.IsNullOrEmpty(code))
@@ -268,6 +303,7 @@ namespace UBIOCClass.ViewModels
                     if (!string.IsNullOrEmpty(note))
                         query += " AND r.AlarmNote = @AlarmNote";
 
+                    query += (" ORDER BY h.DateTime DESC");
                     command.CommandText = query;
 
                     // 매개변수 설정
@@ -291,6 +327,7 @@ namespace UBIOCClass.ViewModels
                         command.Parameters.AddWithValue("@StartDateTime", startDateTime.Value.ToString("yyyy-MM-dd"));
                     if (endDateTime.HasValue && endDateTime.Value != DateTime.MinValue)
                         command.Parameters.AddWithValue("@EndDateTime", endDateTime.Value.ToString("yyyy-MM-dd"));
+
 
                     using (var reader = command.ExecuteReader())
                     {

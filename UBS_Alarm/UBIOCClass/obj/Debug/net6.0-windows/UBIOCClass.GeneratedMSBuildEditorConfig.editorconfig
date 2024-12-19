@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UBIOCClass
-build_property.ProjectDir = C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\Alarm_초안_Level별 Color 추가\UBIOCClass\
+build_property.ProjectDir = C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

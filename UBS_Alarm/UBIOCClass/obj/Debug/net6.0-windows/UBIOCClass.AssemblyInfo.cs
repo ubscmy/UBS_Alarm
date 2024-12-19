@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UBIOCClass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c42eafe086bf58a4841cb16667b559d9443a23bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+239cf1af299435f0b553d078f4fa95ecd9a28861")]
 [assembly: System.Reflection.AssemblyProductAttribute("UBIOCClass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UBIOCClass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
