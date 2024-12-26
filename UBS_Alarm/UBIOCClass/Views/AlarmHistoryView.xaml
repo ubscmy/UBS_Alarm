@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding HisotryModel.AlarmData}" SelectionUnit="FullRow" HeadersVisibility="Column" SelectedItem="{Binding HisotryModel.SelectedAlarmData}">
+            <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding AlarmHistoryData}" SelectionUnit="FullRow" HeadersVisibility="Column" SelectedItem="{Binding SelectedHistoryAlarmData}">
                 <DataGrid.Columns>
                 <DataGridTextColumn  Header="번호" Binding="{Binding AlarmID}" Width="1*" />
                 <DataGridTextColumn  Header="코드" Binding="{Binding AlarmCode}" Width="1.5*" />
@@ -66,7 +66,7 @@
                     <ColumnDefinition Width="0.4*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="코드" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="Auto" />
-                <TextBox Text="{Binding HisotryModel.AlarmCode}" Grid.Column="2" Width="Auto" />
+                <TextBox Text="{Binding AlarmCode}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 알람 명 -->
@@ -78,7 +78,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="알람 명" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <TextBox Text="{Binding HisotryModel.AlarmName}" Grid.Column="2" Width="Auto" />
+                <TextBox Text="{Binding AlarmName}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 발생 원인 -->
@@ -90,7 +90,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="발생 원인" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <TextBox Text="{Binding HisotryModel.AlarmDescription}" Grid.Column="2" Width="Auto" />
+                <TextBox Text="{Binding AlarmDescription}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 조치 방안 -->
@@ -102,7 +102,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="조치 방안" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <TextBox Text="{Binding HisotryModel.AlarmSolveDescription}" Grid.Column="2" Width="Auto" />
+                <TextBox Text="{Binding AlarmSolveDescription}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 종류 -->
@@ -114,7 +114,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="종류" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <ComboBox Grid.Column="2" Width="Auto" Text="{Binding HisotryModel.AlarmLevel}">
+                <ComboBox Grid.Column="2" Width="Auto" Text="{Binding AlarmLevel}">
                     <ComboBoxItem Content="HEAVY" />
                     <ComboBoxItem Content="LIGHT" />
                 </ComboBox>
@@ -129,7 +129,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="시작 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <DatePicker Text="{Binding HisotryModel.AlarmStartDateTime}" Grid.Column="2" Width="Auto" />
+                <DatePicker Text="{Binding AlarmStartDateTime}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 종료일 -->
@@ -141,7 +141,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="종료 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <DatePicker Text="{Binding HisotryModel.AlarmEndDateTime}" Grid.Column="2" Width="Auto" />
+                <DatePicker Text="{Binding AlarmEndDateTime}" Grid.Column="2" Width="Auto" />
             </Grid>
 
 
@@ -171,7 +171,7 @@
                     <ColumnDefinition Width="0.1*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="코드" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <TextBox Text="{Binding HisotryModel.AlarmCode}" Grid.Column="2" Width="Auto" />
+                <TextBox Text="{Binding AlarmCode}" Grid.Column="2" Width="Auto" />
                 <Button Content="추가" Grid.Column="4" Width="Auto" HorizontalAlignment="Left" Command="{Binding ICommandModel.DB_Insert}"/>
             </Grid>
         </Grid>

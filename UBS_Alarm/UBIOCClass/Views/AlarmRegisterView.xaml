@@ -30,8 +30,8 @@
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Text="알람 리스트"/>
-                <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding RegisterModel.AlarmData}" SelectionUnit="FullRow" HeadersVisibility="Column"
-              SelectedItem="{Binding RegisterModel.SelectedAlarmData}"
+                <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding AlarmRegisterData}" SelectionUnit="FullRow" HeadersVisibility="Column"
+              SelectedItem="{Binding SelectedRegisterAlarmData}"
               RowHeight="40"
               ColumnWidth="*"
               HorizontalAlignment="Center" AutoGenerateColumns="False">
@@ -46,9 +46,30 @@
                         
                         <DataGridTextColumn  IsReadOnly="True"  Header="알람코드"       Binding="{Binding AlarmCode}"              Width="2*"/>
                         <DataGridTextColumn  IsReadOnly="True"  Header="알람구분"       Binding="{Binding AlarmType}"              Width="2*"/>
-                        <DataGridTextColumn  IsReadOnly="True"  Header="알람명"         Binding="{Binding AlarmName}"              Width="3*"/>
-                        <DataGridTextColumn  IsReadOnly="True"  Header="알람설명"       Binding="{Binding AlarmDescription}"       Width="4*"/>
-                        <DataGridTextColumn  IsReadOnly="True"  Header="알람해결방안"   Binding="{Binding AlarmSolveDescription}"  Width="4*"/>
+                        <DataGridTextColumn  IsReadOnly="True"  Header="알람명"         Binding="{Binding AlarmName}"              Width="3*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Left" />
+                                    <Setter Property="TextAlignment" Value="Left" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn  IsReadOnly="True"  Header="알람설명"       Binding="{Binding AlarmDescription}"       Width="4*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Left" />
+                                    <Setter Property="TextAlignment" Value="Left" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn  IsReadOnly="True"  Header="알람해결방안"   Binding="{Binding AlarmSolveDescription}"  Width="4*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Left" />
+                                    <Setter Property="TextAlignment" Value="Left" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                         <DataGridTextColumn  IsReadOnly="True"  Header="비고"           Binding="{Binding AlarmNote}"              Width="2*"/>
                     </DataGrid.Columns>
                 </DataGrid>
@@ -75,7 +96,7 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="알람 등급"/>
-                    <TextBox Grid.Row="1" Text="{Binding RegisterModel.AlarmLevel}" Width="auto" Height="auto" />
+                    <TextBox Grid.Row="1" Text="{Binding AlarmLevel}" Width="auto" Height="auto" />
                 </Grid>
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
@@ -83,7 +104,7 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="알람 코드"/>
-                    <TextBox Grid.Row="1" Text="{Binding RegisterModel.AlarmCode}" Width="auto" Height="auto" />
+                    <TextBox Grid.Row="1" Text="{Binding AlarmCode}" Width="auto" Height="auto" />
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.RowDefinitions>
@@ -91,7 +112,7 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="알람 명"/>
-                    <TextBox Grid.Row="1" Text="{Binding RegisterModel.AlarmName}" Width="auto" Height="auto" />
+                    <TextBox Grid.Row="1" Text="{Binding AlarmName}" Width="auto" Height="auto" />
                 </Grid>
                 <Grid Grid.Row="3">
                     <Grid.RowDefinitions>
@@ -99,7 +120,7 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Text="알람 구분"/>
-                    <TextBox Grid.Row="1" Text="{Binding RegisterModel.AlarmType}" Width="auto" Height="auto" />
+                    <TextBox Grid.Row="1" Text="{Binding AlarmType}" Width="auto" Height="auto" />
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
@@ -111,10 +132,9 @@
 
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="1.2*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="0.1*"/>
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" Text="알람 설명"/>
@@ -124,15 +144,18 @@
 
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="1.2*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="0.1*"/>
+
                     </Grid.ColumnDefinitions>
 
-                    <TextBox Grid.Column="0"  Text="{Binding RegisterModel.AlarmDescription}" FontWeight="Bold" Margin="10,10,10,10" />
-                    <TextBox Grid.Column="1" Text="{Binding RegisterModel.AlarmSolveDescription}" FontWeight="Bold" Margin="10,10,10,10" />
-                    <TextBox Grid.Column="2" Text="{Binding RegisterModel.AlarmNote}" FontWeight="Bold" Margin="10,10,10,10" />
+                    <TextBox Grid.Column="0"  Text="{Binding AlarmDescription}" 
+                             TextWrapping="Wrap" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontWeight="Bold" Margin="10,10,10,10" />
+                    <TextBox Grid.Column="1" Text="{Binding AlarmSolveDescription}" 
+                             TextWrapping="Wrap" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontWeight="Bold" Margin="10,10,10,10" />
+                    <TextBox Grid.Column="2" Text="{Binding AlarmNote}" 
+                             TextWrapping="Wrap" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontWeight="Bold" Margin="10,10,10,10" />
                 </Grid>
 
                 <Grid Grid.Row="2">

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media;
+using UBIOCClass.Commands;
 using UBIOCClass.Models;
 
 
@@ -15,7 +16,8 @@ namespace UBIOCClass.ViewModels
 {
     public class NotifyPropertyChangedBase : INotifyPropertyChanged
     {
-        public Query dbCommand = new Query();
+        public HistoryCommand HistoryDBCommand = new HistoryCommand();
+        public RegisterCommand RegisterDBCommand = new RegisterCommand();
         public event PropertyChangedEventHandler PropertyChanged;
         public NotifyPropertyChangedBase()
         {

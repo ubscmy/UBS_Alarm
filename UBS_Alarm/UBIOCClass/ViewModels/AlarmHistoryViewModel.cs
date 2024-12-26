@@ -14,9 +14,71 @@ namespace UBIOCClass.ViewModels
 {
     public class AlarmHistoryViewModel : NotifyPropertyChangedBase
     {
+        private ObservableCollection<Alarm> _AlarmHistoryData = new ObservableCollection<Alarm>();
+        public ObservableCollection<Alarm> AlarmHistoryData { get => _AlarmHistoryData; set => SetProperty(ref _AlarmHistoryData, value); }
 
-        private HistoryModel _HistoryModel = new HistoryModel();
-        public HistoryModel HisotryModel { get => _HistoryModel; set => SetProperty(ref _HistoryModel, value); }
+        private Alarm _SelectedHistoryAlarmData = new Alarm();
+        public Alarm SelectedHistoryAlarmData { get => _SelectedHistoryAlarmData; set => SetProperty(ref _SelectedHistoryAlarmData, value); }
+
+        public string _AlarmCode;
+        public string _AlarmType;
+        public string _AlarmName;
+        public string _AlarmDescription;
+        public string _AlarmSolveDescription;
+        public string _AlarmLevel;
+        public string _AlarmNote;
+        public DateTime _AlarmStartDateTime = DateTime.Now.AddDays(-7);
+        public DateTime _AlarmEndDateTime = DateTime.Now.AddDays(1);
+
+
+        public string AlarmCode
+        {
+            get => _AlarmCode;
+            set => SetProperty(ref _AlarmCode, value);
+        }
+        public string AlarmType
+        {
+            get => _AlarmType;
+            set => SetProperty(ref _AlarmType, value);
+        }
+        public string AlarmName
+        {
+            get => _AlarmName;
+            set => SetProperty(ref _AlarmName, value);
+        }
+
+        public string AlarmDescription
+        {
+            get => _AlarmDescription;
+            set => SetProperty(ref _AlarmDescription, value);
+        }
+
+        public string AlarmSolveDescription
+        {
+            get => _AlarmSolveDescription;
+            set => SetProperty(ref _AlarmSolveDescription, value);
+        }
+
+        public string AlarmLevel
+        {
+            get => _AlarmLevel;
+            set => SetProperty(ref _AlarmLevel, value);
+        }
+        public string AlarmNote
+        {
+            get => _AlarmNote;
+            set => SetProperty(ref _AlarmNote, value);
+        }
+        public DateTime AlarmStartDateTime
+        {
+            get => _AlarmStartDateTime;
+            set => SetProperty(ref _AlarmStartDateTime, value);
+        }
+        public DateTime AlarmEndDateTime
+        {
+            get => _AlarmEndDateTime;
+            set => SetProperty(ref _AlarmEndDateTime, value);
+        }
 
         private ICommandModel _ICommandModel = new ICommandModel();
         public ICommandModel ICommandModel { get => _ICommandModel; set => SetProperty(ref _ICommandModel, value); }
@@ -25,24 +87,26 @@ namespace UBIOCClass.ViewModels
 
         private void DataSelect(object _)
         {
-            HisotryModel.AlarmData = dbCommand.HistoryDataSelect(ref _HistoryModel);
+            AlarmHistoryData.Clear();
+            AlarmHistoryData = HistoryDBCommand.HistoryDataSelect(ref _SelectedHistoryAlarmData);
             NotifyPropertyChanged();
         }
 
         public void TableCreate(object _) 
         { 
-            if(dbCommand.CreateTable())
+            if(HistoryDBCommand.CreateTable())
                 MessageBox.Show("Table 생성 완료");
         }
         private void DataInsert(object _)
         {
-            dbCommand.Hisotry_DataInsert(ref _HistoryModel);
+            HistoryDBCommand.Hisotry_DataInsert(ref _SelectedHistoryAlarmData);
             DataSelect(null);
         }
 
         private void DataSearch(object _)
         {
-            HisotryModel.AlarmData = dbCommand.HistoryDataSearch(ref _HistoryModel);
+            AlarmHistoryData.Clear();
+            AlarmHistoryData = HistoryDBCommand.HistoryDataSearch(ref _SelectedHistoryAlarmData);
             NotifyPropertyChanged();
         }
 

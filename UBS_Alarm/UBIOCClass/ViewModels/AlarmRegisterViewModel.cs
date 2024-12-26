@@ -19,9 +19,76 @@ namespace UBIOCClass.ViewModels
 {
     public class AlarmRegisterViewModel : NotifyPropertyChangedBase
     {
-        private RegisterModel _RegisterModel = new RegisterModel();
-        public RegisterModel RegisterModel { get => _RegisterModel; set => SetProperty(ref _RegisterModel, value); }
-        //public ICommand DBInsert { get; set; }
+        private ObservableCollection<Alarm> _AlarmRegisterData = new ObservableCollection<Alarm>();
+        public ObservableCollection<Alarm> AlarmRegisterData { get => _AlarmRegisterData; set => SetProperty(ref _AlarmRegisterData, value); }
+
+        private Alarm _SelectedRegisterAlarmData = new Alarm();
+        public Alarm SelectedRegisterAlarmData { get => _SelectedRegisterAlarmData; set { SetProperty(ref _SelectedRegisterAlarmData, value); SelectedModelData(); } }
+
+        private void SelectedModelData()
+        {
+            try
+            {
+                AlarmCode = SelectedRegisterAlarmData.AlarmCode;
+                AlarmName = SelectedRegisterAlarmData.AlarmName;
+                AlarmType = SelectedRegisterAlarmData.AlarmType;
+                AlarmDescription = SelectedRegisterAlarmData.AlarmDescription;
+                AlarmSolveDescription = SelectedRegisterAlarmData.AlarmSolveDescription;
+                AlarmLevel = SelectedRegisterAlarmData.AlarmLevel;
+                AlarmNote = SelectedRegisterAlarmData.AlarmNote;
+            }
+            catch (NullReferenceException)
+            {
+                // 정상 작동한거임
+            }
+        }
+
+        public string _AlarmCode;
+        public string _AlarmType;
+        public string _AlarmName;
+        public string _AlarmDescription;
+        public string _AlarmSolveDescription;
+        public string _AlarmLevel;
+        public string _AlarmNote;
+
+        public string AlarmCode
+        {
+            get => _AlarmCode;
+            set => SetProperty(ref _AlarmCode, value);
+        }
+        public string AlarmType
+        {
+            get => _AlarmType;
+            set => SetProperty(ref _AlarmType, value);
+        }
+        public string AlarmName
+        {
+            get => _AlarmName;
+            set => SetProperty(ref _AlarmName, value);
+        }
+
+        public string AlarmDescription
+        {
+            get => _AlarmDescription;
+            set => SetProperty(ref _AlarmDescription, value);
+        }
+
+        public string AlarmSolveDescription
+        {
+            get => _AlarmSolveDescription;
+            set => SetProperty(ref _AlarmSolveDescription, value);
+        }
+
+        public string AlarmLevel
+        {
+            get => _AlarmLevel;
+            set => SetProperty(ref _AlarmLevel, value);
+        }
+        public string AlarmNote
+        {
+            get => _AlarmNote;
+            set => SetProperty(ref _AlarmNote, value);
+        }
 
         private ICommandModel _ICommandModel = new ICommandModel();
         public ICommandModel ICommandModel { get => _ICommandModel; set => SetProperty(ref _ICommandModel, value); }
@@ -29,26 +96,27 @@ namespace UBIOCClass.ViewModels
 
         private void DataInsert(object _)
         {
-            bool bSuccess = dbCommand.Regster_DataInsert(ref _RegisterModel);
+            bool bSuccess = RegisterDBCommand.Register_DataInsert(ref _SelectedRegisterAlarmData);
             if (bSuccess == true)
                 DataSelect(null);
         }
         private void DataUpdate(object _)
         {
-            bool bSuccess = dbCommand.Register_DataUpdate(ref _RegisterModel);
+            bool bSuccess = RegisterDBCommand.Register_DataUpdate(ref _SelectedRegisterAlarmData);
             if (bSuccess == true)
                 DataSelect(null);
         }
         private void DataDelete(object _)
         {
-            bool bSuccess = dbCommand.Register_DataDelete(ref _RegisterModel);
+            bool bSuccess = RegisterDBCommand.Register_DataDelete(ref _SelectedRegisterAlarmData);
             if (bSuccess == true)
                 DataSelect(null);
         }
 
         private void DataSelect(object _)
         {
-            RegisterModel.AlarmData = dbCommand.RegisterDataSelect(ref _RegisterModel);
+            AlarmRegisterData.Clear();
+            AlarmRegisterData = RegisterDBCommand.RegisterDataSelect(ref _SelectedRegisterAlarmData);
             NotifyPropertyChanged();
         }
 
