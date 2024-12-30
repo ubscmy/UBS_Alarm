@@ -44,6 +44,7 @@
             <TabItem Header="알람 등록">
                 <local:AlarmRegisterView DataContext ="{Binding AlarmRegisterViewmodel}"/>
             </TabItem>
+            
         </TabControl>
     </Grid>
 </UserControl>

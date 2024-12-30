@@ -94,12 +94,31 @@ namespace UBIOCClass.ViewModels
         public ICommandModel ICommandModel { get => _ICommandModel; set => SetProperty(ref _ICommandModel, value); }
 
 
+        private void DBAlarmTest(object _)
+        {
+            // Code를 Key로 잡는다.
+            var viewModel = new WinAlarmViewModel();
+            viewModel.AlarmData = RegisterDBCommand.AlarmTest(ref _SelectedRegisterAlarmData);
+
+            var alarmWindow = new WinAlarm();
+            alarmWindow.DataContext = viewModel;  // DataContext 설정
+
+            // 윈도우를 화면 가운데에서 시작하도록 설정
+            alarmWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
+            alarmWindow.Show();  // WinAlarm 윈도우를 표시
+        }
+
+
+
         private void DataInsert(object _)
         {
             bool bSuccess = RegisterDBCommand.Register_DataInsert(ref _SelectedRegisterAlarmData);
             if (bSuccess == true)
                 DataSelect(null);
         }
+
+
         private void DataUpdate(object _)
         {
             bool bSuccess = RegisterDBCommand.Register_DataUpdate(ref _SelectedRegisterAlarmData);
@@ -132,6 +151,8 @@ namespace UBIOCClass.ViewModels
             ICommandModel.DB_Update = new DelegateCommand(DataUpdate);
             ICommandModel.DB_Delete = new DelegateCommand(DataDelete);
             ICommandModel.DB_Select = new DelegateCommand(DataSelect);
+
+            ICommandModel.AlarmTest = new DelegateCommand(DBAlarmTest);
         }
 
     }

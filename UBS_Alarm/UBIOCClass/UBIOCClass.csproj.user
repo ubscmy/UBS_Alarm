@@ -19,6 +19,9 @@
     <Compile Update="Views\MainView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\WinAlarm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\AlarmView.xaml">
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WinAlarm.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -27,12 +27,6 @@ namespace UBIOCClass.ViewModels
 
         }
 
-        //private void CurrentViewModelChange(object obj)
-        //{
-        //    //eNaviType naviType = (eNaviType)obj;
-        //    //_navigationService.Navigate(naviType);
-        //}
-
         #region NavigationBar Dock
         // 20040906 ubs psy : 네비게이션 바의 방향(수평 또는 수직)을 나타내는 속성
         private Orientation _NavBarOrientation;
@@ -73,10 +67,7 @@ namespace UBIOCClass.ViewModels
 			_mainNavigationStore = mainNavigationStore;
 			_mainNavigationStore.CurrentViewModelChanged += CurrentViewModelChanged;
 
-            //_navigationService = navigationService;
             navigationService.Navigate(NaviType.AlarmView);
-
-            //UpdateCurrentViewModelCommand = new DelegateCommand(CurrentViewModelChange);
         }
 
 		public INotifyPropertyChanged CurrentViewModel

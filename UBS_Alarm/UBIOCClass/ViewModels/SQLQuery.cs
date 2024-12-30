@@ -216,6 +216,39 @@ namespace UBIOCClass.ViewModels
 
             return select;
         }
+        public List<string>[] Register_AlarmTest(string Code)
+        {
+            List<string>[] select = new List<string>[8];
+            using (var connection = OpenConnection())
+            {
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Register WHERE AlarmCode = @AlarmCode ORDER BY AlarmCode ASC";
+                command.Parameters.AddWithValue("@AlarmCode", Code);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    for (int i = 0; i < select.Length; i++)
+                    {
+                        select[i] = new List<string>();
+                    }
+
+                    while (reader.Read())
+                    {
+                        select[0].Add(reader.GetInt32(0).ToString());
+                        select[1].Add(reader.GetString(1));
+                        select[2].Add(reader.GetString(2));
+                        select[3].Add(reader.GetString(3));
+                        select[4].Add(reader.GetString(4));
+                        select[5].Add(reader.GetString(5));
+                        select[6].Add(reader.GetString(6));
+                        select[7].Add(reader.GetString(7));
+                    }
+                }
+                connection.Close();
+            }
+
+            return select;
+        }
 
         public bool CheckRegisterDup(string AlarmCode)
         {
@@ -283,7 +316,6 @@ namespace UBIOCClass.ViewModels
                 {
                     // 기본 쿼리, 한 줄로 작성
                     string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, r.AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1";
-                    //string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1 ORDER BY h.DateTime DESC;";
 
                     // 동적으로 조건 추가
                     if (!string.IsNullOrEmpty(code))

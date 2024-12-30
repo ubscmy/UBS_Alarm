@@ -67,6 +67,33 @@ namespace UBIOCClass.Commands
             return new ObservableCollection<Alarm>(Alarms);
         }
 
+        public Alarm AlarmTest(ref Alarm registerModel)
+        {
+            // 데이터 조회 후 list에 저장
+            List<string>[] list = Register_AlarmTest(registerModel.AlarmCode);
+
+            // 데이터가 비어 있거나 열 수가 부족한 경우 빈 Alarm 객체 반환
+            if (list == null || list.Length < 8 || list.Any(l => l == null || l.Count == 0))
+                return new Alarm();
+
+            // Alarm 객체를 자동으로 매핑
+            var alarm = new Alarm
+            {
+                AlarmID = list[0].First(),
+                AlarmCode = list[1].First(),
+                AlarmType = list[2].First(),
+                AlarmName = list[3].First(),
+                AlarmDescription = list[4].First(),
+                AlarmSolveDescription = list[5].First(),
+                AlarmLevel = list[6].First(),
+                AlarmNote = list[7].First()
+            };
+
+            return alarm; // 생성된 Alarm 객체 반환
+        }
+
+
+
         // Register에서 Data를 Insert한다.
         public bool Register_DataInsert(ref Alarm Register)
         {

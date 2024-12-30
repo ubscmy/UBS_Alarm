@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\Alarm\\Alarm_UBS\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj": {}
+    "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj": {}
   },
   "projects": {
-    "D:\\Source\\Alarm\\Alarm_UBS\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj": {
+    "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\Alarm\\Alarm_UBS\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
+        "projectUniqueName": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
         "projectName": "UBIOCClass",
-        "projectPath": "D:\\Source\\Alarm\\Alarm_UBS\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
-        "packagesPath": "C:\\Users\\shiny\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\Alarm\\Alarm_UBS\\UBS_Alarm\\UBIOCClass\\obj\\",
+        "projectPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\UBIOCClass.csproj",
+        "packagesPath": "C:\\Users\\sbico\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sbico\\OneDrive\\바탕 화면\\업무\\WPF\\Alarm 프로젝트\\UBS_Alarm\\UBIOCClass\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\shiny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sbico\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -42,9 +38,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -90,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
