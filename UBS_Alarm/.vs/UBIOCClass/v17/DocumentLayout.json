@@ -7,72 +7,20 @@
       "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\alarmregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\alarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\alarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\sqlquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\sqlquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\styles\\stycommon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\styles\\stycommon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\winalarm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\winalarm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\winalarm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\winalarm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\winalarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\winalarmviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\alarmhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\alarmhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmregisterview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmregisterview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\alarmhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\alarmhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\models\\icommandmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,16 +31,28 @@
       "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\commands\\historycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\notifypropertychangedbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\notifypropertychangedbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmchartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmchartview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\alarmview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\viewmodels\\sqlquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\viewmodels\\sqlquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\winalarm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\winalarm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\lvcview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\lvcview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|c:\\users\\sbico\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\wpf\\alarm \uD504\uB85C\uC81D\uD2B8\\ubs_alarm\\ubiocclass\\views\\lvcview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D74F7A43-0D8E-4417-A420-45703066D509}|UBIOCClass\\UBIOCClass.csproj|solutionrelative:ubiocclass\\views\\lvcview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -113,105 +73,8 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WinAlarm.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\WinAlarm.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml",
-              "RelativeToolTip": "UBIOCClass\\Views\\WinAlarm.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T05:27:12.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "styCommon.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Styles\\styCommon.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Styles\\styCommon.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Styles\\styCommon.xaml",
-              "RelativeToolTip": "UBIOCClass\\Styles\\styCommon.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T04:57:51.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SQLQuery.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\SQLQuery.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\SQLQuery.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\SQLQuery.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\SQLQuery.cs",
-              "ViewState": "AQIAANIAAAAAAAAAAAAewN8AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T04:52:50.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WinAlarm.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\WinAlarm.xaml.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml.cs",
-              "RelativeToolTip": "UBIOCClass\\Views\\WinAlarm.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T05:27:15.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AlarmView.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmView.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml",
-              "RelativeToolTip": "UBIOCClass\\Views\\AlarmView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T05:46:34.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WinAlarmViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\WinAlarmViewModel.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\WinAlarmViewModel.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\WinAlarmViewModel.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\WinAlarmViewModel.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAUwCQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T05:47:19.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlarmViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmViewModel.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\AlarmViewModel.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmViewModel.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\AlarmViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T04:54:20.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\MainViewModel.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAD8AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T06:42:55.127Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -221,187 +84,151 @@
               "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\AlarmRegisterViewModel.cs",
               "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmRegisterViewModel.cs",
               "RelativeToolTip": "UBIOCClass\\ViewModels\\AlarmRegisterViewModel.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAQwGYAAAAtAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAuwFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T06:29:17.085Z",
+              "WhenOpened": "2025-01-09T03:40:35.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterCommand.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\RegisterCommand.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Commands\\RegisterCommand.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\RegisterCommand.cs",
-              "RelativeToolTip": "UBIOCClass\\Commands\\RegisterCommand.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAewEUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T06:27:59.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NavigationBar.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\NavigationBar.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\NavigationBar.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\NavigationBar.xaml",
-              "RelativeToolTip": "UBIOCClass\\Views\\NavigationBar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T06:42:45.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainView.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\MainView.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\MainView.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\MainView.xaml",
-              "RelativeToolTip": "UBIOCClass\\Views\\MainView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T05:46:31.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\App.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\App.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\App.xaml",
-              "RelativeToolTip": "UBIOCClass\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T07:03:09.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AlarmView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmView.xaml.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml.cs",
-              "RelativeToolTip": "UBIOCClass\\Views\\AlarmView.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T07:37:55.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AlarmHistoryView.xaml",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
-              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
-              "RelativeToolTip": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-23T06:41:50.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "AlarmRegisterView.xaml",
               "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmRegisterView.xaml",
               "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmRegisterView.xaml",
               "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmRegisterView.xaml",
               "RelativeToolTip": "UBIOCClass\\Views\\AlarmRegisterView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-23T07:19:27.496Z",
+              "WhenOpened": "2025-01-09T10:47:57.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\AssemblyInfo.cs",
-              "RelativeToolTip": "UBIOCClass\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "SQLQuery.cs",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\SQLQuery.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\SQLQuery.cs",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\SQLQuery.cs",
+              "RelativeToolTip": "UBIOCClass\\ViewModels\\SQLQuery.cs",
+              "ViewState": "AQIAAOsAAAAAAAAAAAAgwAEBAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T07:12:51.881Z",
+              "WhenOpened": "2025-01-09T06:39:31.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlarmHistoryView.xaml",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmHistoryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T06:48:53.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AlarmHistoryViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAnwHEAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T06:29:16.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ICommandModel.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\ICommandModel.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Models\\ICommandModel.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\ICommandModel.cs",
-              "RelativeToolTip": "UBIOCClass\\Models\\ICommandModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBQAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T04:53:41.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 6,
               "Title": "HistoryCommand.cs",
               "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\HistoryCommand.cs",
               "RelativeDocumentMoniker": "UBIOCClass\\Commands\\HistoryCommand.cs",
               "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\HistoryCommand.cs",
               "RelativeToolTip": "UBIOCClass\\Commands\\HistoryCommand.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAewB4AAAAqAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAD4vy0AAAD2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T06:26:49.192Z",
+              "WhenOpened": "2025-01-09T06:38:00.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlarmHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
+              "RelativeToolTip": "UBIOCClass\\ViewModels\\AlarmHistoryViewModel.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAiwGIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:37:36.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NotifyPropertyChangedBase.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\NotifyPropertyChangedBase.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\ViewModels\\NotifyPropertyChangedBase.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\ViewModels\\NotifyPropertyChangedBase.cs",
-              "RelativeToolTip": "UBIOCClass\\ViewModels\\NotifyPropertyChangedBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAARAAAA",
+              "DocumentIndex": 4,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Commands\\RegisterCommand.cs",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\RegisterCommand.cs",
+              "RelativeToolTip": "UBIOCClass\\Commands\\RegisterCommand.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAgwLEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T04:54:25.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-08T06:33:36.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DelegateCommand.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\DelegateCommand.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Commands\\DelegateCommand.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Commands\\DelegateCommand.cs",
-              "RelativeToolTip": "UBIOCClass\\Commands\\DelegateCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "ICommandModel.cs",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\ICommandModel.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Models\\ICommandModel.cs",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\ICommandModel.cs",
+              "RelativeToolTip": "UBIOCClass\\Models\\ICommandModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T04:49:26.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:49:16.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Alarm.cs",
-              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\Alarm.cs",
-              "RelativeDocumentMoniker": "UBIOCClass\\Models\\Alarm.cs",
-              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Models\\Alarm.cs",
-              "RelativeToolTip": "UBIOCClass\\Models\\Alarm.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwCgAAAAIAAAA",
+              "DocumentIndex": 7,
+              "Title": "AlarmChartView.xaml",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmChartView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmChartView.xaml",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmChartView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmChartView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-08T01:33:44.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlarmView.xaml",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\AlarmView.xaml",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\AlarmView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\AlarmView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T07:36:16.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WinAlarm.xaml",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\WinAlarm.xaml",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\WinAlarm.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\WinAlarm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T07:36:24.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "lvcView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\lvcView.xaml.cs",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\lvcView.xaml.cs",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\lvcView.xaml.cs",
+              "RelativeToolTip": "UBIOCClass\\Views\\lvcView.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwCYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T04:56:53.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-08T01:34:04.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "lvcView.xaml",
+              "DocumentMoniker": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\lvcView.xaml",
+              "RelativeDocumentMoniker": "UBIOCClass\\Views\\lvcView.xaml",
+              "ToolTip": "C:\\Users\\sbico\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5C5\uBB34\\WPF\\Alarm \uD504\uB85C\uC81D\uD2B8\\UBS_Alarm\\UBIOCClass\\Views\\lvcView.xaml",
+              "RelativeToolTip": "UBIOCClass\\Views\\lvcView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-08T01:34:03.549Z"
             }
           ]
         }

@@ -82,19 +82,19 @@
             </Grid>
 
             <!-- 발생 원인 -->
-            <Grid Grid.Row="3" Margin="0,5">
+            <!--<Grid Grid.Row="3" Margin="0,5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1.2*" />
                     <ColumnDefinition Width="0.2*"/>
                     <ColumnDefinition Width="4*" />
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="발생 원인" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBlock Text="발생 원인" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Visibility="H"/>
                 <TextBox Text="{Binding AlarmDescription}" Grid.Column="2" Width="Auto" />
-            </Grid>
+            </Grid>-->
 
             <!-- 조치 방안 -->
-            <Grid Grid.Row="4" Margin="0,5">
+            <!--<Grid Grid.Row="4" Margin="0,5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1.2*" />
                     <ColumnDefinition Width="0.2*"/>
@@ -103,7 +103,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="조치 방안" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
                 <TextBox Text="{Binding AlarmSolveDescription}" Grid.Column="2" Width="Auto" />
-            </Grid>
+            </Grid>-->
 
             <!-- 종류 -->
             <Grid Grid.Row="5" Margin="0,5">
@@ -113,7 +113,7 @@
                     <ColumnDefinition Width="4*" />
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="종류" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                <TextBlock Text="등급" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
                 <ComboBox Grid.Column="2" Width="Auto" Text="{Binding AlarmLevel}">
                     <ComboBoxItem Content="HEAVY" />
                     <ComboBoxItem Content="LIGHT" />
@@ -129,7 +129,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="시작 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <DatePicker Text="{Binding AlarmStartDateTime}" Grid.Column="2" Width="Auto" />
+                <DatePicker Text="{Binding AlarmStartDateTime, Mode=TwoWay}" Grid.Column="2" Width="Auto" />
             </Grid>
 
             <!-- 종료일 -->
@@ -141,7 +141,7 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="종료 일" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                <DatePicker Text="{Binding AlarmEndDateTime}" Grid.Column="2" Width="Auto" />
+                <DatePicker Text="{Binding AlarmEndDateTime, Mode=TwoWay}" Grid.Column="2" Width="Auto" />
             </Grid>
 
 
@@ -155,7 +155,7 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- 검색 버튼 -->
-                <Button Grid.Column="1" Height="Auto" Content="테이블+" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.CreateTable}" Cursor="Hand" />
+                <Button Grid.Column="1" Height="Auto" Content="테이블+" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.CreateTable}" Cursor="Hand" Visibility="Hidden" />
                 <Button Grid.Column="2" Height="Auto" Content="새로고침" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.DB_Select}"/>
                 <Button Grid.Column="3" Height="Auto" Content="검색" Width="80" Margin="0,0,5,0" HorizontalAlignment="Center" Command="{Binding ICommandModel.DB_SearchSelect}"/>
             </Grid>

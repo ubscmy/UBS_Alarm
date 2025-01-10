@@ -19,5 +19,6 @@ namespace UBIOCClass.Models
         public ICommand? DB_SearchSelect { get; set; }
         public ICommand? CreateTable { get; set; }
         public ICommand? AlarmTest { get; set; }
+        public ICommand? ExcelImport { get; set; }
     }
 }

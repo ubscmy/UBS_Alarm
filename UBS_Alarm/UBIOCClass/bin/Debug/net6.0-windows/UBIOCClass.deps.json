@@ -11,6 +11,7 @@
           "ExcelDataReader": "3.7.0",
           "ExcelDataReader.DataSet": "3.7.0",
           "FontAwesome6.Svg": "2.5.1",
+          "LiveCharts.Wpf": "0.9.7",
           "Microsoft.Data.Sqlite": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0"
         },
@@ -53,6 +54,25 @@
           "lib/net6.0-windows7.0/FontAwesome6.Svg.Net.dll": {
             "assemblyVersion": "2.5.1.0",
             "fileVersion": "2.5.1.0"
+          }
+        }
+      },
+      "LiveCharts/0.9.7": {
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
           }
         }
       },
@@ -273,6 +293,20 @@
       "sha512": "sha512-Z5GApcKwxP3Jg5m81yBjJutQq7lTBUY6Ra5JrsURkvWZ8yZq1WMOXX5Lke4lMkZIVDGJpgJ06k3lsRfP8J6lMA==",
       "path": "fontawesome6.svg/2.5.1",
       "hashPath": "fontawesome6.svg.2.5.1.nupkg.sha512"
+    },
+    "LiveCharts/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "path": "livecharts/0.9.7",
+      "hashPath": "livecharts.0.9.7.nupkg.sha512"
+    },
+    "LiveCharts.Wpf/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+      "path": "livecharts.wpf/0.9.7",
+      "hashPath": "livecharts.wpf.0.9.7.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite/9.0.0": {
       "type": "package",

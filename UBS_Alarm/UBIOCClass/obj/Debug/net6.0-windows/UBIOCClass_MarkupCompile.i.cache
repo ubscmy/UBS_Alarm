@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\App.xaml
-71519138784
+9866474993
 
-311907428397
-206604993585
-Styles\styCommon.xaml;Views\AlarmHistoryView.xaml;Views\AlarmRegisterView.xaml;Views\AlarmView.xaml;Views\MainView.xaml;Views\NavigationBar.xaml;Views\WinAlarm.xaml;
+34236634928
+208-1991407947
+Styles\styCommon.xaml;Views\AlarmChartView.xaml;Views\AlarmHistoryView.xaml;Views\AlarmRegisterView.xaml;Views\AlarmView.xaml;Views\lvcView.xaml;Views\MainView.xaml;Views\NavigationBar.xaml;Views\WinAlarm.xaml;
 
-False
+True
 

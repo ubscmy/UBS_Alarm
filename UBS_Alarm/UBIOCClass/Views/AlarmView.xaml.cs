@@ -24,6 +24,8 @@ namespace UBIOCClass.Views
     {
         public AlarmHistoryViewModel AlarmHistoryViewmodel { get; set; }
         public AlarmRegisterViewModel AlarmRegisterViewmodel { get; set; }
+        public WinAlarmChartViewModel WinAlarmChartViewModel { get; set; }
+
 
         public AlarmView()
         {
@@ -34,6 +36,7 @@ namespace UBIOCClass.Views
 
             AlarmHistoryViewmodel = new AlarmHistoryViewModel(navigationService);
             AlarmRegisterViewmodel = new AlarmRegisterViewModel(navigationService);
+            WinAlarmChartViewModel = new WinAlarmChartViewModel(navigationService);
 
             DataContext = this; // MainWindow 자체를 DataContext로 설정
         }

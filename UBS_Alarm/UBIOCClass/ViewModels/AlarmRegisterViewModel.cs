@@ -1,15 +1,6 @@
-﻿using ExcelDataReader;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.Win32;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Input;
-using System.Windows.Threading;
 using UBIOCClass.Commands;
 using UBIOCClass.Models;
 using UBIOCClass.Services;
@@ -96,9 +87,57 @@ namespace UBIOCClass.ViewModels
 
         private void DBAlarmTest(object _)
         {
-            // Code를 Key로 잡는다.
+            int seqno = 1;
+            int sensorNo = 4;
+            double angle = 15.5;
+            float curAngle = 7.5f;
+            bool check = false;
+
+            AlarmScreenShow("300", "StageSequence -", seqno, "에서 Sensor", sensorNo, "번 문제 발생.", "프로그램 재실행하세요.", angle, curAngle, check);
+            AlarmScreenShow("300", "Sensor", sensorNo, "번의 문제가", "StageSequence -", seqno, "에서 발생.", "프로그램 재실행하세요.", angle, curAngle, check);
+        }
+
+        public string _SequenceName;
+        public int _SequenceNumber;
+
+
+        public string SequenceName
+        {
+            get => _SequenceName;
+            set => SetProperty(ref _SequenceName, value);
+        }
+        public int SequenceNumber
+        {
+            get => _SequenceNumber;
+            set => SetProperty(ref _SequenceNumber, value);
+        }
+
+
+        private void AlarmScreenShow(object AlarmCode, params object[] args)
+        {
+            if (AlarmCode is double || AlarmCode is float)
+            {
+                MessageBox.Show("소수점");
+                return;
+            }
+
+            string str = string.Empty;
+            foreach (var value in args)
+            {
+                str += value.ToString() + " ";
+            }
+
+
+            var cAlarmScreen = AlarmScreen(AlarmCode, str);
+            cAlarmScreen.Show();
+            MessageBox.Show(str);
+
+        }
+
+        private WinAlarm AlarmScreen(object AlarmCode, string SolveDescription)
+        {
             var viewModel = new WinAlarmViewModel();
-            viewModel.AlarmData = RegisterDBCommand.AlarmTest(ref _SelectedRegisterAlarmData);
+            viewModel.AlarmData = RegisterDBCommand.AlarmTest(AlarmCode, SolveDescription);
 
             var alarmWindow = new WinAlarm();
             alarmWindow.DataContext = viewModel;  // DataContext 설정
@@ -106,36 +145,84 @@ namespace UBIOCClass.ViewModels
             // 윈도우를 화면 가운데에서 시작하도록 설정
             alarmWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
-            alarmWindow.Show();  // WinAlarm 윈도우를 표시
+            return alarmWindow;
         }
 
+        private Alarm AlarmObject()
+        {
+            Alarm alarm = new Alarm();
+            alarm.AlarmCode = AlarmCode;
+            alarm.AlarmDescription = AlarmDescription;
+            alarm.AlarmName = AlarmName;
+            alarm.AlarmSolveDescription = AlarmSolveDescription;
+            alarm.AlarmType = AlarmType;
+            alarm.AlarmLevel = AlarmLevel;
+            alarm.AlarmNote = AlarmNote;
 
+            return alarm;
+        }
 
         private void DataInsert(object _)
         {
-            bool bSuccess = RegisterDBCommand.Register_DataInsert(ref _SelectedRegisterAlarmData);
+            var alarm = AlarmObject();
+            bool bSuccess = RegisterDBCommand.Register_DataInsert(ref alarm);
             if (bSuccess == true)
-                DataSelect(null);
+                DataRefresh(null);
         }
 
 
         private void DataUpdate(object _)
         {
-            bool bSuccess = RegisterDBCommand.Register_DataUpdate(ref _SelectedRegisterAlarmData);
+            var alarm = AlarmObject();
+            bool bSuccess = RegisterDBCommand.Register_DataUpdate(ref alarm);
             if (bSuccess == true)
-                DataSelect(null);
+                DataRefresh(null);
         }
         private void DataDelete(object _)
         {
             bool bSuccess = RegisterDBCommand.Register_DataDelete(ref _SelectedRegisterAlarmData);
             if (bSuccess == true)
-                DataSelect(null);
+                DataRefresh(null);
         }
 
         private void DataSelect(object _)
         {
             AlarmRegisterData.Clear();
             AlarmRegisterData = RegisterDBCommand.RegisterDataSelect(ref _SelectedRegisterAlarmData);
+            NotifyPropertyChanged();
+        }
+        private void DataRefresh(object _)
+        {
+            AlarmRegisterData.Clear();
+            AlarmRegisterData = RegisterDBCommand.RegisterRefresh(ref _SelectedRegisterAlarmData);
+            NotifyPropertyChanged();
+        }
+        private void CSVImport(object _)
+        {
+
+            string path = string.Empty;
+            // OpenFileDialog 인스턴스 생성
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "파일 선택",
+                Filter = "모든 파일 (*.*)|*.*" // 필요하면 필터 설정
+            };
+
+            // 대화 상자 표시
+            if (openFileDialog.ShowDialog() == true)
+            {
+                // 선택한 파일 경로 가져오기
+                path = openFileDialog.FileName;
+
+                // 파일 경로를 출력하거나 다른 작업 수행
+                MessageBox.Show("선택한 파일 경로: " + path);
+            }
+            else
+            {
+                MessageBox.Show("파일이 선택되지 않았습니다.");
+            }
+
+            RegisterDBCommand.ExcelToDBInsert(path);
             NotifyPropertyChanged();
         }
 
@@ -151,8 +238,8 @@ namespace UBIOCClass.ViewModels
             ICommandModel.DB_Update = new DelegateCommand(DataUpdate);
             ICommandModel.DB_Delete = new DelegateCommand(DataDelete);
             ICommandModel.DB_Select = new DelegateCommand(DataSelect);
-
             ICommandModel.AlarmTest = new DelegateCommand(DBAlarmTest);
+            ICommandModel.ExcelImport = new DelegateCommand(CSVImport);
         }
 
     }

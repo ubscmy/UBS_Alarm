@@ -14,12 +14,11 @@ namespace UBIOCClass.Commands
         public bool CreateTable() { return _CreateTable(); } // 테이블 생성
 
         // Hisotry에서 Data를 Insert한다.
-        public void Hisotry_DataInsert(ref Alarm historyModel)
+        public void Hisotry_DataInsert(string _AlarmCode)
         {
-            string AlarmCode = historyModel.AlarmCode;
+            string AlarmCode = _AlarmCode;
             string NowDateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             HisInsertData(AlarmCode, NowDateTime);
-            historyModel.AlarmCode = string.Empty;
         }
 
         // History 기본 데이터를 불러온다
@@ -44,10 +43,10 @@ namespace UBIOCClass.Commands
             return _AlarmData;
         }
         // History에서 검색했을 때 데이터를 불러온다.
-        public ObservableCollection<Alarm> HistoryDataSearch(ref Alarm historyModel)
+        public ObservableCollection<Alarm> HistoryDataSearch(string AlarmCode, string AlarmType, string AlarmDescription, string AlarmLevel, string AlarmName, string AlarmNote, string AlarmSolveDescription, DateTime? AlarmStartDateTime, DateTime? AlarmEndDateTime)
         {
             // 데이터 조회 후 list에 저장
-            List<string>[] list = History_SearchData(historyModel.AlarmCode, historyModel.AlarmType, historyModel.AlarmName, historyModel.AlarmDescription, historyModel.AlarmSolveDescription, historyModel.AlarmLevel, historyModel.AlarmNote, historyModel.AlarmStartDateTime, historyModel.AlarmEndDateTime);
+            List<string>[] list = History_SearchData(AlarmCode, AlarmType, AlarmDescription, AlarmLevel, AlarmName, AlarmNote, AlarmSolveDescription, AlarmStartDateTime, AlarmEndDateTime);
 
             // Alarm 객체 생성
             var alarms = Enumerable.Range(0, list[0].Count).Select(index => new Alarm

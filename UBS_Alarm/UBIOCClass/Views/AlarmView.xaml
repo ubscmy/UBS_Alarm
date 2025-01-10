@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UBIOCClass.Views"
-        mc:Ignorable="d"
+        xmlns:local="clr-namespace:UBIOCClass.Views" xmlns:viewmodels="clr-namespace:UBIOCClass.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:WinAlarmChartViewModel}"
+             mc:Ignorable="d"
          Width="1880" Height="990">
     <Grid>
         <TabControl Background="Transparent" BorderThickness="0"
@@ -44,7 +44,12 @@
             <TabItem Header="알람 등록">
                 <local:AlarmRegisterView DataContext ="{Binding AlarmRegisterViewmodel}"/>
             </TabItem>
-            
+            <!--<TabItem Header="알람 차트">
+                <local:AlarmChartView DataContext ="{Binding WinAlarmChartViewModel}"/>
+            </TabItem>-->
+
+
         </TabControl>
+        <!--<AlarmFrequencyGraph GridAlarmGraph="{Binding TargetAlarm}" StartTime="{Binding StartTime}" EndTime="{Binding EndTime}" GraphType="DotGraph"/> --><!--LineGraph-->
     </Grid>
 </UserControl>

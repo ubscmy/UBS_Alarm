@@ -36,7 +36,7 @@ namespace UBIOCClass.ViewModels
             }
             return connection;
         }
-       
+
         // 테이블 생성 (단일 실행)
         public bool _CreateTable()
         {
@@ -86,7 +86,7 @@ namespace UBIOCClass.ViewModels
                 }
 
                 var createHistoryIndex = @"CREATE INDEX IF NOT EXISTS idx_history_alarmcode ON History(AlarmCode);
-";                using (var command = connection.CreateCommand())
+"; using (var command = connection.CreateCommand())
                 {
                     command.CommandText = createHistoryIndex;
                     command.ExecuteNonQuery();
@@ -168,6 +168,34 @@ namespace UBIOCClass.ViewModels
 
             }
         }
+        public List<string>[] SELECT_AlarmWeekCount(string AlarmCode)
+        {
+            // 해당 Alarm이 1주일 간 얼마나 발생했는지 개수를 가져온다. Alarm 화면 표시에 사용
+            List<string>[] select = new List<string>[2];
+            using (var connection = OpenConnection())
+            {
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT DateTime FROM History WHERE AlarmCode = @AlarmCode AND DateTime >= datetime('now', '-7 days')";
+                command.Parameters.AddWithValue("@AlarmCode", AlarmCode);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    for (int i = 0; i < select.Length; i++)
+                    {
+                        select[i] = new List<string>();
+                    }
+
+                    while (reader.Read())
+                    {
+                        select[0].Add(reader.GetString(0));
+                    }
+                }
+                connection.Close();
+            }
+
+            return select;
+        }
+
 
         public void HisInsertData(string Code, string OcucurrenceTime)
         {
@@ -216,7 +244,7 @@ namespace UBIOCClass.ViewModels
 
             return select;
         }
-        public List<string>[] Register_AlarmTest(string Code)
+        public List<string>[] Register_AlarmTest(object Code)
         {
             List<string>[] select = new List<string>[8];
             using (var connection = OpenConnection())
@@ -306,7 +334,8 @@ namespace UBIOCClass.ViewModels
             }
             return select;
         }
-        public List<string>[] History_SearchData(string code, string type, string alarmName, string cause, string action, string level, string note, DateTime? startDateTime, DateTime? endDateTime)
+        public List<string>[] History_SearchData(string AlarmCode, string AlarmType, string AlarmDescription, string AlarmLevel, string AlarmName, string AlarmNote, string AlarmSolveDescription, DateTime? AlarmStartDateTime, DateTime? AlarmEndDateTime)
+        //public List<string>[] History_SearchData(string code, string type, string alarmName, string cause, string action, string level, string note, DateTime? startDateTime, DateTime? endDateTime)
         {
             List<string>[] select = new List<string>[9]; // 열 개수에 맞춰 배열 크기 설정
 
@@ -317,46 +346,52 @@ namespace UBIOCClass.ViewModels
                     // 기본 쿼리, 한 줄로 작성
                     string query = "SELECT h.Id, h.AlarmCode, r.AlarmType, r.AlarmName, r.AlarmDescription, r.AlarmSolveDescription, r.AlarmLevel, r.AlarmNote, h.DateTime AS HistoryDateTime FROM History h INNER JOIN Register r ON h.AlarmCode = r.AlarmCode WHERE 1=1";
 
-                    // 동적으로 조건 추가
-                    if (!string.IsNullOrEmpty(code))
+                    //동적으로 조건 추가
+                    if (!string.IsNullOrEmpty(AlarmCode))
                         query += " AND h.AlarmCode = @AlarmCode";
-                    if (!string.IsNullOrEmpty(type))
+                    if (!string.IsNullOrEmpty(AlarmType))
                         query += " AND r.AlarmType = @AlarmType";
-                    if (!string.IsNullOrEmpty(alarmName))
+                    if (!string.IsNullOrEmpty(AlarmName))
                         query += " AND r.AlarmName = @AlarmName";
-                    if (!string.IsNullOrEmpty(cause))
+                    if (!string.IsNullOrEmpty(AlarmDescription))
                         query += " AND r.AlarmDescription = @AlarmDescription";
-                    if (!string.IsNullOrEmpty(action))
+                    if (!string.IsNullOrEmpty(AlarmSolveDescription))
                         query += " AND r.AlarmSolveDescription = @AlarmSolveDescription";
-                    if (!string.IsNullOrEmpty(level))
+                    if (!string.IsNullOrEmpty(AlarmLevel))
                         query += " AND r.AlarmLevel = @AlarmLevel";
-                    if (!string.IsNullOrEmpty(note))
+                    if (!string.IsNullOrEmpty(AlarmNote))
                         query += " AND r.AlarmNote = @AlarmNote";
+                    if (AlarmStartDateTime.HasValue && AlarmEndDateTime.HasValue)
+                        query += " AND h.DateTime BETWEEN @StartDateTime AND @EndDateTime";
+                    else if (AlarmStartDateTime.HasValue)
+                        query += " AND h.DateTime >= @StartDateTime";
+                    else if (AlarmEndDateTime.HasValue)
+                        query += " AND h.DateTime <= @EndDateTime";
 
                     query += (" ORDER BY h.DateTime DESC");
                     command.CommandText = query;
 
-                    // 매개변수 설정
-                    if (!string.IsNullOrEmpty(code))
-                        command.Parameters.AddWithValue("@AlarmCode", code);
-                    if (!string.IsNullOrEmpty(type))
-                        command.Parameters.AddWithValue("@AlarmType", type);
-                    if (!string.IsNullOrEmpty(alarmName))
-                        command.Parameters.AddWithValue("@AlarmName", alarmName);
-                    if (!string.IsNullOrEmpty(cause))
-                        command.Parameters.AddWithValue("@AlarmDescription", cause);
-                    if (!string.IsNullOrEmpty(action))
-                        command.Parameters.AddWithValue("@AlarmSolveDescription", action);
-                    if (!string.IsNullOrEmpty(level))
-                        command.Parameters.AddWithValue("@AlarmLevel", level);
-                    if (!string.IsNullOrEmpty(note))
-                        command.Parameters.AddWithValue("@AlarmNote", note);
+                    //매개변수 설정
+                    if (!string.IsNullOrEmpty(AlarmCode))
+                        command.Parameters.AddWithValue("@AlarmCode", AlarmCode);
+                    if (!string.IsNullOrEmpty(AlarmType))
+                        command.Parameters.AddWithValue("@AlarmType", AlarmType);
+                    if (!string.IsNullOrEmpty(AlarmName))
+                        command.Parameters.AddWithValue("@AlarmName", AlarmName);
+                    if (!string.IsNullOrEmpty(AlarmDescription))
+                        command.Parameters.AddWithValue("@AlarmDescription", AlarmDescription);
+                    if (!string.IsNullOrEmpty(AlarmSolveDescription))
+                        command.Parameters.AddWithValue("@AlarmSolveDescription", AlarmSolveDescription);
+                    if (!string.IsNullOrEmpty(AlarmLevel))
+                        command.Parameters.AddWithValue("@AlarmLevel", AlarmLevel);
+                    if (!string.IsNullOrEmpty(AlarmNote))
+                        command.Parameters.AddWithValue("@AlarmNote", AlarmNote);
 
-                    // 날짜가 유효하면 매개변수 추가
-                    if (startDateTime.HasValue && startDateTime.Value != DateTime.MinValue)
-                        command.Parameters.AddWithValue("@StartDateTime", startDateTime.Value.ToString("yyyy-MM-dd"));
-                    if (endDateTime.HasValue && endDateTime.Value != DateTime.MinValue)
-                        command.Parameters.AddWithValue("@EndDateTime", endDateTime.Value.ToString("yyyy-MM-dd"));
+                    //날짜가 유효하면 매개변수 추가
+                    if (AlarmStartDateTime.HasValue && AlarmStartDateTime.Value != DateTime.MinValue)
+                        command.Parameters.AddWithValue("@StartDateTime", AlarmStartDateTime.Value.ToString("yyyy-MM-dd"));
+                    if (AlarmEndDateTime.HasValue && AlarmEndDateTime.Value != DateTime.MinValue)
+                        command.Parameters.AddWithValue("@EndDateTime", AlarmEndDateTime.Value.ToString("yyyy-MM-dd"));
 
 
                     using (var reader = command.ExecuteReader())

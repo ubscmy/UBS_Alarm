@@ -361,4 +361,10 @@ D:\Source\Alarm\Alarm_UBS\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\UBIOCCla
 D:\Source\Alarm\Alarm_UBS\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\ref\UBIOCClass.dll
 C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\UBIOCClass.sourcelink.json
 C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\WinAlarm.g.cs
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\WinAlarm.baml
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\lvcView.baml
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\lvcView.g.cs
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\AlarmChartView.g.cs
+C:\Users\sbico\OneDrive\바탕 화면\업무\WPF\Alarm 프로젝트\UBS_Alarm\UBIOCClass\obj\Debug\net6.0-windows\Views\AlarmChartView.baml

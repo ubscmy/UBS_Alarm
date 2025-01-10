@@ -20,15 +20,15 @@ namespace UBIOCClass.ViewModels
         private Alarm _SelectedHistoryAlarmData = new Alarm();
         public Alarm SelectedHistoryAlarmData { get => _SelectedHistoryAlarmData; set => SetProperty(ref _SelectedHistoryAlarmData, value); }
 
-        public string _AlarmCode;
-        public string _AlarmType;
-        public string _AlarmName;
-        public string _AlarmDescription;
-        public string _AlarmSolveDescription;
-        public string _AlarmLevel;
-        public string _AlarmNote;
-        public DateTime _AlarmStartDateTime = DateTime.Now.AddDays(-7);
-        public DateTime _AlarmEndDateTime = DateTime.Now.AddDays(1);
+        private string _AlarmCode;
+        private string _AlarmType;
+        private string _AlarmName;
+        private string _AlarmDescription;
+        private string _AlarmSolveDescription;
+        private string _AlarmLevel;
+        private string _AlarmNote;
+        private DateTime? _AlarmStartDateTime ;
+        private DateTime? _AlarmEndDateTime;
 
 
         public string AlarmCode
@@ -69,12 +69,12 @@ namespace UBIOCClass.ViewModels
             get => _AlarmNote;
             set => SetProperty(ref _AlarmNote, value);
         }
-        public DateTime AlarmStartDateTime
+        public DateTime? AlarmStartDateTime
         {
             get => _AlarmStartDateTime;
             set => SetProperty(ref _AlarmStartDateTime, value);
         }
-        public DateTime AlarmEndDateTime
+        public DateTime? AlarmEndDateTime
         {
             get => _AlarmEndDateTime;
             set => SetProperty(ref _AlarmEndDateTime, value);
@@ -87,26 +87,33 @@ namespace UBIOCClass.ViewModels
 
         private void DataSelect(object _)
         {
+            AlarmCode = "";
+            AlarmName = "";
+            AlarmLevel = "";
+
+            AlarmStartDateTime =  DateTime.Now.AddDays(-7);
+            AlarmEndDateTime = DateTime.Now;
             AlarmHistoryData.Clear();
             AlarmHistoryData = HistoryDBCommand.HistoryDataSelect(ref _SelectedHistoryAlarmData);
             NotifyPropertyChanged();
         }
 
-        public void TableCreate(object _) 
-        { 
-            if(HistoryDBCommand.CreateTable())
+        public void TableCreate(object _)
+        {
+            if (HistoryDBCommand.CreateTable())
                 MessageBox.Show("Table 생성 완료");
         }
         private void DataInsert(object _)
         {
-            HistoryDBCommand.Hisotry_DataInsert(ref _SelectedHistoryAlarmData);
+            HistoryDBCommand.Hisotry_DataInsert(AlarmCode);
+            AlarmCode = string.Empty;
             DataSelect(null);
         }
 
         private void DataSearch(object _)
         {
             AlarmHistoryData.Clear();
-            AlarmHistoryData = HistoryDBCommand.HistoryDataSearch(ref _SelectedHistoryAlarmData);
+            AlarmHistoryData = HistoryDBCommand.HistoryDataSearch(AlarmCode, AlarmType, AlarmDescription, AlarmLevel, AlarmName, AlarmNote, AlarmSolveDescription,AlarmStartDateTime,AlarmEndDateTime);
             NotifyPropertyChanged();
         }
 

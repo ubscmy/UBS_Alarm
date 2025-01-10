@@ -26,7 +26,7 @@ namespace UBIOCClass.Commands
 
         public bool AlarmDataNullOrEmpty(Alarm Register) { return new[] { Register.AlarmCode, Register.AlarmType, Register.AlarmName, Register.AlarmDescription, Register.AlarmSolveDescription, Register.AlarmLevel, Register.AlarmNote }.Any(string.IsNullOrEmpty); }
         public bool DuplicateExists(Alarm Register) { return CheckRegisterDup(Register.AlarmCode); }
-        public void AlarmPropertiesClear(ref Alarm Register) { Register.AlarmCode = Register.AlarmType = Register.AlarmName = Register.AlarmDescription = Register.AlarmSolveDescription = Register.AlarmLevel = Register.AlarmNote = string.Empty; }
+        public void AlarmPropertiesClear(ref Alarm Register) { if (Register == null) { return; }  Register.AlarmCode = Register.AlarmType = Register.AlarmName = Register.AlarmDescription = Register.AlarmSolveDescription = Register.AlarmLevel = Register.AlarmNote = string.Empty; }
         public int CheckIsAallowed(Alarm Register)
         {
             // Insert나 Update 중 조건 확인
@@ -67,10 +67,37 @@ namespace UBIOCClass.Commands
             return new ObservableCollection<Alarm>(Alarms);
         }
 
-        public Alarm AlarmTest(ref Alarm registerModel)
+        public ObservableCollection<Alarm> RegisterRefresh(ref Alarm registerModel)
         {
             // 데이터 조회 후 list에 저장
-            List<string>[] list = Register_AlarmTest(registerModel.AlarmCode);
+            List<string>[] list = Register_ReadData();
+
+            // 데이터가 비어 있거나 열 수가 부족한 경우 빈 컬렉션 반환
+            if (list == null || list.Length < 8 || list.Any(l => l == null || l.Count == 0))
+                return new ObservableCollection<Alarm>();
+
+            // Alarm 객체를 생성하여 ObservableCollection으로 처리
+            var Alarms = Enumerable.Range(0, list[0].Count).Select(i => new Alarm
+            {
+                AlarmID = list[0][i],
+                AlarmCode = list[1][i],
+                AlarmType = list[2][i],
+                AlarmName = list[3][i],
+                AlarmDescription = list[4][i],
+                AlarmSolveDescription = list[5][i],
+                AlarmLevel = list[6][i],
+                AlarmNote = list[7][i]
+            })
+                .ToList();
+            // ObservableCollection으로 변환
+            return new ObservableCollection<Alarm>(Alarms);
+        }
+
+
+        public Alarm AlarmTest(object AlarmCode, string SolveDescription)
+        {
+            // 데이터 조회 후 list에 저장
+            List<string>[] list = Register_AlarmTest(AlarmCode);
 
             // 데이터가 비어 있거나 열 수가 부족한 경우 빈 Alarm 객체 반환
             if (list == null || list.Length < 8 || list.Any(l => l == null || l.Count == 0))
@@ -84,7 +111,7 @@ namespace UBIOCClass.Commands
                 AlarmType = list[2].First(),
                 AlarmName = list[3].First(),
                 AlarmDescription = list[4].First(),
-                AlarmSolveDescription = list[5].First(),
+                AlarmSolveDescription = SolveDescription,
                 AlarmLevel = list[6].First(),
                 AlarmNote = list[7].First()
             };
